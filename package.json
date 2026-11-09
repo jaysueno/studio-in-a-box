@@ -1,0 +1,44 @@
+{
+  "name": "studio-in-a-box",
+  "version": "1.0.0",
+  "description": "A slice of studio software for an invented studio: members, classes, package credits kept as a ledger that must balance, a cash close, and roles enforced in the database.",
+  "type": "module",
+  "private": true,
+  "license": "MIT",
+  "author": "Jay Sueno",
+  "engines": {
+    "node": ">=20"
+  },
+  "packageManager": "pnpm@10.30.0",
+  "scripts": {
+    "test": "vitest run test",
+    "dev": "next dev -p ${PORT:-3000}",
+    "build": "next build",
+    "start": "next start -p ${PORT:-3000}",
+    "e2e": "playwright test",
+    "env:local": "node scripts/env-local.mjs",
+    "seed": "node scripts/seed.mjs",
+    "dump:seed": "node scripts/dump-seed.mjs",
+    "images": "node docs/img/make.mjs",
+    "screenshots": "node scripts/screenshots.mjs",
+    "demo": "node scripts/demo-video.mjs"
+  },
+  "dependencies": {
+    "@supabase/ssr": "0.12.7",
+    "@supabase/supabase-js": "2.119.0",
+    "next": "15.5.29",
+    "pg": "8.23.1",
+    "react": "19.2.9",
+    "react-dom": "19.2.9"
+  },
+  "devDependencies": {
+    "@playwright/test": "1.65.0",
+    "@tailwindcss/postcss": "4.3.5",
+    "@types/node": "^24.19.2",
+    "@types/react": "^19.3.0",
+    "@types/react-dom": "^19.3.0",
+    "tailwindcss": "4.3.5",
+    "typescript": "5.9.3",
+    "vitest": "5.1.0"
+  }
+}
