@@ -7,6 +7,8 @@ script invents the studio with a fixed seed, so every run is the same studio.
 
 ## What it does
 
+![The member schedule in the app: classes for the coming weeks, each with seats left and a Book button](docs/img/schedule-hero.png)
+
 ![The seeded studio at a glance: 60 members, 60 packages, 188 signed ledger rows, 24 classes over four weeks and 126 bookings, plus one cash close at 1,347.00 expected, 1,347.00 counted and 0.00 difference.](docs/img/hero.svg)
 
 Cedarline Studio is invented; any resemblance to a real studio is a coincidence. The software
